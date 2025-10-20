@@ -16,7 +16,7 @@ app.use(express.json());
 //Cors Policy
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: process.env.ORIGINS ?? "http://localhost:5173",
   })
 );
 
